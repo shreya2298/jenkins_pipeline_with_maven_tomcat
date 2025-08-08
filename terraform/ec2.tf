@@ -16,6 +16,8 @@ resource "aws_instance" "web" {
 
               sudo apt update
               sudo apt install openjdk-17-jdk -y
+              sudo apt install maven -y
+
 
               # ---------------- Jenkins Installation ----------------
               wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
